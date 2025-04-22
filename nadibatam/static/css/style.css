@@ -1,0 +1,243 @@
+/* ===== GENERAL ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* ===== NAVBAR ACTIVE LINK ===== */
+  .navbar .nav-link.active {
+    border-bottom: 3px solid rgb(6, 255, 39);
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  /* ===== BRAND ===== */
+  .navbar-brand {
+    font-size: 60px;
+  }
+  
+  /* ===== HERO SECTION ===== */
+  .hero {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* ===== FORM INPUT STYLE ===== */
+  input.form-control,
+  .input-group-text {
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  /* ===== BUTTON STYLE ===== */
+  button.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  button.btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  /* ===== FOOTER SECTION ===== */
+  .footer {
+    background-color: #b30000;
+    color: white;
+    padding: 40px 20px 10px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .footer-left {
+    flex: 1 1 300px;
+  }
+  
+  .footer-left img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Judul di footer */
+  h2 {
+    color: #fff;
+  }
+  
+  /* Warna semua link di dalam footer jadi putih */
+  .footer a {
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #ffcccb;
+  }
+  
+  /* Sosial Media */
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #b30000;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: #d80707;
+    color: #800000;
+  }
+  
+  /* Kolom kanan footer */
+  .footer-right {
+    flex: 1 1 200px;
+  }
+  
+  .footer-right h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-right ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ===== BATAM MUDAH SECTION ===== */
+  .batam-mudah {
+    background-color: white;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .batam-title {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .batam-list {
+    padding: 15px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  
+  /* Ikon sosial (opsional) */
+  .social-icons a {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* ===== FOOTER BOTTOM ===== */
+  .footer-bottom {
+    background-color: #b30000;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom .dev-name {
+    color: orange;
+  }
+  
+  /* ===== SCROLL TO TOP BUTTON ===== */
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: orange;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .scroll-top.active {
+    display: flex;
+  }
+  
+  .scroll-top:hover {
+    background-color: darkorange;
+  }
+  
+  /* ===== RESPONSIVE SECTION ===== */
+  @media screen and (max-width: 768px) {
+    .slogan {
+      font-size: 18px;
+      padding: 15px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left,
+    .footer-right {
+      text-align: center;
+    }
+  }
+  
