@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <br>Pengembangan Sistem Informasi Manajemen Inventaris Barang pada [Nama Perusahaan/Instansi]</br> -->
+
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard.html">Inventory Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="Inventory.html">Manage Inventory</a></li>
+                <li class="nav-item"><a class="nav-link" href="reports.html">Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="setting-1.html">User Settings</a></li>
+                <!-- New Login Menu Item -->
+                <li class="nav-item"><a class="nav-link" href="login-1.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <!-- Dashboard Header -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Dashboard</h2>
+            </div>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="card text-center bg-light shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Items</h5>
+                        <p class="card-text display-6">1,200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Low Stock Items</h5>
+                        <p class="card-text display-6 text-warning">15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Transactions This Month</h5>
+                        <p class="card-text display-6">320</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Transaction Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Recent Transactions</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Quantity</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionTableBody">
+                                <tr>
+                                    <td><input type="text" class="form-control item-name" value="Laptop"></td>
+                                    <td>5</td>
+                                    <td>2023-11-01</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control item-name" value="Printer"></td>
+                                    <td>3</td>
+                                    <td>2023-11-02</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="form-control item-name" value="Mouse"></td>
+                                    <td>20</td>
+                                    <td>2023-11-03</td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary" onclick="saveChanges()">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to handle changes to item names -->
+    <script>
+        function saveChanges() {
+            const itemInputs = document.querySelectorAll('.item-name');
+            itemInputs.forEach((input) => {
+                console.log("Updated item name:", input.value);
+            });
+            alert("Item names have been updated!");
+        }
+    </script>
+</body>
+</html>
